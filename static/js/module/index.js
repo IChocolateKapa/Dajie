@@ -10,6 +10,7 @@ $(function(){
     setTimeOutFunction($("#_showHead").addClass("slide_rotate"));
     setTimeOutFunction($("#_thirdHead").addClass("scale"));
     setTimeOutFunction($("#_fourthHead").addClass("scale"));
+    setTimeOutFunction($("#_recommendHead").addClass("scale"));
     var bodyHeight = $(window).height();
     console.log(bodyHeight);
     if(bodyHeight > 900){
@@ -17,6 +18,7 @@ $(function(){
         setTimeOutFunction($("#_secondHead").addClass("scale"));
         setTimeOutFunction($("#_thirdHead").addClass("scale"));
         setTimeOutFunction($("#_fourthHead").addClass("scale"));
+        setTimeOutFunction($("#_recommendHead").addClass("scale"));
     }
 })
 

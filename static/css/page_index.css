@@ -680,3 +680,43 @@
 }
 
 /*各个条目的文字部分, 结束*/
+
+/*名人推荐部分 开始*/
+.recommendPeople{
+    margin-top: 192px;
+    background: #e9ebee;
+    border: 1px solid #dee1e6;
+    /*height: 0;*/
+    height: 636px;
+}
+.recommendPeopleQuote{
+    background: #E34949;
+    line-height: 22px;
+    padding: 0 10px;
+    border-right: 5px #b21a1a solid;
+    top: 322px;
+    right: -5px;
+}
+
+.recommendPeopleTitle{
+    border-bottom: 1px solid #c6c8cb;
+    text-indent: 30px;
+    /*line-height: 31px;*/
+}
+.recommendPeopleMask{
+    z-index: 99;
+    background: #f3f5f8;
+    /*background: red;*/
+    height: 100%;
+    bottom: -2332px;
+    -webkit-transition: all .8s linear .3s;
+    -moz-transition: all .8s linear .3s;
+    -o-transition: all .8s linear .3s;
+    -ms-transition: all .8s linear .3s;
+    transition: all .8s linear .3s;
+}
+.scale .recommendPeopleMask{
+    height: 0;
+    /*transform: rotate(180deg);*/
+}
+/*名人推荐部分 结束*/
