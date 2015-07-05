@@ -138,6 +138,8 @@ th, td{
 .h80{height: 80px;}
 .h90{height: 90px;}
 .w90{width: 90px;}
+.h121{height: 121px;}
+.w99{width: 99px;}
 
 .bd1{border: 1px solid red;}
 .bd2{border: 1px solid greenyellow;}
@@ -179,6 +181,8 @@ th, td{
 .tp120{top: 120px;}
 .tp-4{top: -4px;}
 .lt-2{left: -2px;}
+.lt-1{left: -1px;}
+.lt0{left: 0;}
 .tp-3{top: -3px;}
 .lt-4{left: -4px;}
 .lt2{left: 2px;}
@@ -188,3 +192,4 @@ th, td{
 .lt30{left: 50px;}
 .rt136{right: 136px;}
 .lt70{left: 70px;}
+.tp202{top: 202px;}

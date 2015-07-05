@@ -8,11 +8,13 @@ var setTimeOutFunction = function(callback){
 
 $(function(){
     setTimeOutFunction($("#_showHead").addClass("slide_rotate"));
+    setTimeOutFunction($("#_thirdHead").addClass("scale"));
     var bodyHeight = $(window).height();
     console.log(bodyHeight);
     if(bodyHeight > 900){
         setTimeOutFunction($("#_firstHead").addClass("scale"));
         setTimeOutFunction($("#_secondHead").addClass("scale"));
+        setTimeOutFunction($("#_thirdHead").addClass("scale"));
     }
 })
 
@@ -25,5 +27,6 @@ $(window).on("scroll", function(){
     } else if(scrollTop >= 150 && scrollTop <= 980){
         setTimeOutFunction($("#_firstHead").addClass("scale"));
         setTimeOutFunction($("#_secondHead").addClass("scale"));
+        setTimeOutFunction($("#_thirdHead").addClass("scale"));
     }
 })

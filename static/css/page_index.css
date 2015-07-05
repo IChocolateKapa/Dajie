@@ -51,6 +51,8 @@
     background: url("../images/checkbox.png") 0 -34px no-repeat;
 }
 
+
+/*登录侧边 右侧 使用其他账户登录 开始*/
 ._otherAuth{
     border-top: 1px dotted #ccc;
     top: 40px;
@@ -81,6 +83,9 @@
 .authItem4{
     background-position: 90% 89%;
 }
+/*登录侧边 右侧 使用其他账户登录 结束*/
+
+/*登录侧边 左侧 图片效果 开始*/
 .showHead{
     position: absolute;
     width: 220px;
@@ -139,6 +144,12 @@
     -ms-transform: rotate(12deg);
     transform: rotate(12deg);
 }
+/*登录侧边 左侧 图片效果 结束*/
+
+
+
+
+/*第一条 图片样式 开始*/
 .firstStep{
     z-index: 2;
     -webkit-transform: scale(0);
@@ -195,53 +206,13 @@
     transition: all .3s linear 1s;
     background: url("../images/first-step-right.png") no-repeat;
 }
-
-.scale  .firstStep,
-.scale  .firstStepCenter,
-.scale  .firstStepLeft,
-.scale  .firstStepRight{
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-}
+/*第一条 图片样式 结束*/
 
 
-.firstStepTitle{
-    top: 225px;
-}
-.firstStepTitle h2,
-.secondStepTitle h2{
-    opacity: 0;
-    margin-top: 20px;
-    -webkit-transition: all .2s linear .3s;
-    -moz-transition: all .2s linear .3s;
-    -o-transition: all .2s linear .3s;
-    -ms-transition: all .2s linear .3s;
-    transition: all .2s linear .3s;
-}
-.firstStepTitle h4,
-.secondStepTitle h4{
-    opacity: 0;
-    margin-top: 40px;
-    -webkit-transition: all .2s linear .6s;
-    -moz-transition: all .2s linear .6s;
-    -o-transition: all .2s linear .6s;
-    -ms-transition: all .2s linear .6s;
-    transition: all .2s linear .6s;
-}
-.scale .firstStepTitle h2,
-.scale .secondStepTitle h2{
-    opacity: 1;
-    margin-top: 0;
-}
-.scale .firstStepTitle h4,
-.scale .secondStepTitle h4{
-    opacity: 1;
-    margin-top: 15px;
-}
 
+
+
+/*第二条图片样式 开始*/
 .secondStep{
     background: url("../images/second-c-bg.jpg") no-repeat;
     -webkit-transform: rotateY(90deg);
@@ -255,13 +226,7 @@
     -ms-transition: all .6s linear .6s;
     transition: all .6s linear .6s;
 }
-.scale .secondStep{
-    -webkit-transform: rotateY(0deg);
-    -moz-transform: rotateY(0deg);
-    -o-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-}
+
 .secondStepCenter{
     left: 75px;
     top: 52px;
@@ -296,63 +261,6 @@
     -ms-transition: all .3s linear .6s;
     transition: all .3s linear .6s;
 }
-/*你中间图片的动画效果，旋转*/
-
-@keyframes rotateN {
-    0%   {rotateY(90deg);}
-    25%  {rotateY(180deg);}
-    50%  {rotateY(270deg);}
-    100% {rotateY(360deg);}
-}
-@-moz-keyframes rotateN {
-    0%   {rotateY(90deg);}
-    25%  {rotateY(180deg);}
-    50%  {rotateY(270deg);}
-    100% {rotateY(360deg);}
-}
-
-@-webkit-keyframes rotateN {
-    0%   {rotateY(0deg);}
-    25%  {rotateY(90deg);}
-    50%  {rotateY(180deg);}
-    100% {rotateY(360deg);}
-}
-@-ms-keyframes rotateN {
-    0%   {rotateY(90deg);}
-    25%  {rotateY(180deg);}
-    50%  {rotateY(270deg);}
-    100% {rotateY(360deg);}
-}
-@-o-keyframes rotateN {
-    0%   {rotateY(90deg);}
-    25%  {rotateY(180deg);}
-    50%  {rotateY(270deg);}
-    100% {rotateY(360deg);}
-}
-
-.scale .secondStepYou{
-    /*animation-name: rotateN;*/
-    /*animation-duration: .6s;/!*动画持续时间*!/*/
-    /*animation-timing-function: ease-in-out; /!*动画频率，和transition-timing-function是一样的*!/*/
-    /*animation-delay: .6s;/!*动画延迟时间*!/*/
-    /*animation-iteration-count: 3;/!*定义循环资料，infinite为无限次*!/*/
-    /*-moz-animation-name: rotateN;*/
-    /*-moz-animation-duration: .6s;/!*动画持续时间*!/*/
-    /*-moz-animation-timing-function: ease-in-out; /!*动画频率，和transition-timing-function是一样的*!/*/
-    /*-moz-animation-delay: .6s;/!*动画延迟时间*!/*/
-    /*-moz-animation-iteration-count: 3;/!*定义循环资料，infinite为无限次*!/*/
-    /*-webkit-animation-name: rotateN;/!*动画属性名，也就是我们前面keyframes定义的动画名*!/*/
-    /*-webkit-animation-duration: .6s;/!*动画持续时间*!/*/
-    /*-webkit-animation-timing-function: ease-in-out; /!*动画频率，和transition-timing-function是一样的*!/*/
-    /*-webkit-animation-delay: .6s;/!*动画延迟时间*!/*/
-    /*-webkit-animation-iteration-count: 3;/!*定义循环资料，infinite为无限次*!/*/
-    -webkit-transform: rotateY(-360deg);
-    -moz-transform: rotateY(-360deg);
-    -o-transform: rotateY(-360deg);
-    -ms-transform: rotateY(-360deg);
-    transform: rotateY(-360deg);
-}
-
 
 .secondStep1{
     top: -35px;
@@ -429,9 +337,95 @@
     -ms-transition: all .3s linear 2.0s;
     transition: all .3s linear 2.0s;
 }
-.secondStepTitle{
-    top: 195px;
+
+.thirdStep{
+    width: 473px;
+    height: 192px;
+    background: url("../images/third-c-bg.jpg");
+    opacity: 0;
+    -webkit-transition: all .6s linear .3s;
+    -moz-transition: all .6s linear .3s;
+    -o-transition: all .6s linear .3s;
+    -ms-transition: all .6s linear .3s;
+    transition: all .6s linear .3s;
 }
+.thirdStepYou{
+    background: url("../images/third-step-you.png");
+    top: -220px;
+    opacity: .5;
+    left: 192px;
+    -webkit-transition: all .6s linear .3s;
+    -moz-transition: all .6s linear .3s;
+    -o-transition: all .6s linear .3s;
+    -ms-transition: all .6s linear .3s;
+    transition: all .6s linear .3s;
+}
+.thirdStep1{
+    top: -45px;
+    left: 40px;
+    background: url("../images/third-step-1.png");
+    opacity: 0;
+    -webkit-transition: all .6s linear .8s;
+    -moz-transition: all .6s linear .8s;
+    -o-transition: all .6s linear .8s;
+    -ms-transition: all .6s linear .8s;
+    transition: all .6s linear .8s;
+}
+.thirdStep2{
+    top: -90px;
+    left: 253px;
+    background: url("../images/third-step-2.png");
+    opacity: 0;
+    -webkit-transition: all .6s linear 1.0s;
+    -moz-transition: all .6s linear 1.0s;
+    -o-transition: all .6s linear 1.0s;
+    -ms-transition: all .6s linear 1.0s;
+    transition: all .6s linear 1.0s;
+}
+.thirdStep3{
+    top: -15px;
+    left: 366px;
+    background: url("../images/third-step-3.png");
+    opacity: 0;
+    -webkit-transition: all .6s linear 1.2s;
+    -moz-transition: all .6s linear 1.2s;
+    -o-transition: all .6s linear 1.2s;
+    -ms-transition: all .6s linear 1.2s;
+    transition: all .6s linear 1.2s;
+}
+.thirdStep4{
+    top: 48px;
+    left: 281px;
+    background: url("../images/third-step-4.png");
+    opacity: 0;
+    -webkit-transition: all .6s linear 1.4s;
+    -moz-transition: all .6s linear 1.4s;
+    -o-transition: all .6s linear 1.4s;
+    -ms-transition: all .6s linear 1.4s;
+    transition: all .6s linear 1.4s;
+}
+.thirdStep5{
+    top: 61px;
+    left: 105px;
+    background: url("../images/third-step-5.png");
+    opacity: 0;
+    -webkit-transition: all .6s linear 1.5s;
+    -moz-transition: all .6s linear 1.5s;
+    -o-transition: all .6s linear 1.5s;
+    -ms-transition: all .6s linear 1.5s;
+    transition: all .6s linear 1.5s;
+}
+/*第二条图片样式 结束*/
+
+
+
+
+
+/*第一条和第二条 图片部分触发动画的效果 开始*/
+.scale  .firstStep,
+.scale  .firstStepCenter,
+.scale  .firstStepLeft,
+.scale  .firstStepRight,
 .scale .secondStepCenter,
 .scale .secondStep1,
 .scale .secondStep2,
@@ -444,12 +438,140 @@
     -ms-transform: scale(1);
     transform: scale(1);
 }
+.scale .secondStep{
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
 
-.secondStepTitle h2{
+/*自定义 第二条 你 中间图片的动画效果，旋转*/
+@keyframes rotateN {
+    0%   {rotateY(90deg);}
+    25%  {rotateY(180deg);}
+    50%  {rotateY(270deg);}
+    100% {rotateY(360deg);}
+}
+@-moz-keyframes rotateN {
+    0%   {rotateY(90deg);}
+    25%  {rotateY(180deg);}
+    50%  {rotateY(270deg);}
+    100% {rotateY(360deg);}
+}
+
+@-webkit-keyframes rotateN {
+    0%   {rotateY(0deg);}
+    25%  {rotateY(90deg);}
+    50%  {rotateY(180deg);}
+    100% {rotateY(360deg);}
+}
+@-ms-keyframes rotateN {
+    0%   {rotateY(90deg);}
+    25%  {rotateY(180deg);}
+    50%  {rotateY(270deg);}
+    100% {rotateY(360deg);}
+}
+@-o-keyframes rotateN {
+    0%   {rotateY(90deg);}
+    25%  {rotateY(180deg);}
+    50%  {rotateY(270deg);}
+    100% {rotateY(360deg);}
+}
+
+.scale .secondStepYou{
+    /*animation-name: rotateN;*/
+    /*animation-duration: .6s;/!*动画持续时间*!/*/
+    /*animation-timing-function: ease-in-out; /!*动画频率，和transition-timing-function是一样的*!/*/
+    /*animation-delay: .6s;/!*动画延迟时间*!/*/
+    /*animation-iteration-count: 3;/!*定义循环资料，infinite为无限次*!/*/
+    /*-moz-animation-name: rotateN;*/
+    /*-moz-animation-duration: .6s;/!*动画持续时间*!/*/
+    /*-moz-animation-timing-function: ease-in-out; /!*动画频率，和transition-timing-function是一样的*!/*/
+    /*-moz-animation-delay: .6s;/!*动画延迟时间*!/*/
+    /*-moz-animation-iteration-count: 3;/!*定义循环资料，infinite为无限次*!/*/
+    /*-webkit-animation-name: rotateN;/!*动画属性名，也就是我们前面keyframes定义的动画名*!/*/
+    /*-webkit-animation-duration: .6s;/!*动画持续时间*!/*/
+    /*-webkit-animation-timing-function: ease-in-out; /!*动画频率，和transition-timing-function是一样的*!/*/
+    /*-webkit-animation-delay: .6s;/!*动画延迟时间*!/*/
+    /*-webkit-animation-iteration-count: 3;/!*定义循环资料，infinite为无限次*!/*/
+    -webkit-transform: rotateY(-360deg);
+    -moz-transform: rotateY(-360deg);
+    -o-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+}
+/*第二条中间 你 图片的旋转效果*/
+
+/*第三条图片部分动画 开始*/
+.scale .thirdStepYou{
+    top: -9px;
+    opacity: 1;
+}
+.scale .thirdStep,
+.scale .thirdStep1,
+.scale .thirdStep2,
+.scale .thirdStep3,
+.scale .thirdStep4,
+.scale .thirdStep5{
+    opacity: 1;
+}
+/*第三条图片部分动画 结束*/
+
+
+
+/*第一条和第二条 出发动画的效果 结束*/
+
+
+
+
+
+/*各个条目的文字部分, 开始*/
+.firstStepTitle{
+    top: 225px;
+}
+
+.secondStepTitle{
+    top: 195px;
+}
+
+.thirdStepTitle{
+    top: 237px;
+}
+
+.firstStepTitle h2,
+.secondStepTitle h2,
+.thirdStepTitle h2{
     opacity: 0;
     margin-top: 20px;
+    -webkit-transition: all .2s linear .3s;
+    -moz-transition: all .2s linear .3s;
+    -o-transition: all .2s linear .3s;
+    -ms-transition: all .2s linear .3s;
+    transition: all .2s linear .3s;
 }
-.secondStepTitle h4{
+.firstStepTitle h4,
+.secondStepTitle h4,
+.thirdStepTitle h4{
     opacity: 0;
     margin-top: 40px;
+    -webkit-transition: all .2s linear .6s;
+    -moz-transition: all .2s linear .6s;
+    -o-transition: all .2s linear .6s;
+    -ms-transition: all .2s linear .6s;
+    transition: all .2s linear .6s;
 }
+.scale .firstStepTitle h2,
+.scale .secondStepTitle h2,
+.scale .thirdStepTitle h2{
+    opacity: 1;
+    margin-top: 0;
+}
+.scale .firstStepTitle h4,
+.scale .secondStepTitle h4,
+.scale .thirdStepTitle h4{
+    opacity: 1;
+    margin-top: 15px;
+}
+
+/*各个条目的文字部分, 结束*/
