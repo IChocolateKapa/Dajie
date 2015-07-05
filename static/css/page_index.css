@@ -708,7 +708,7 @@
     background: #f3f5f8;
     /*background: red;*/
     height: 100%;
-    bottom: -2332px;
+    bottom: -2332px;/*如果没有这一条属性,遮罩就会展示成从下到上打开,why?*/
     -webkit-transition: all .8s linear .3s;
     -moz-transition: all .8s linear .3s;
     -o-transition: all .8s linear .3s;
