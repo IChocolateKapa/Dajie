@@ -708,7 +708,7 @@
     background: #f3f5f8;
     /*background: red;*/
     height: 638px;
-    bottom: -2364px;/*如果没有这一条属性,遮罩就会展示成从下到上打开,why?*/
+    bottom: 0;/*如果没有这一条属性,遮罩就会展示成从下到上打开,why?*/
     -webkit-transition: all .8s linear .3s;
     -moz-transition: all .8s linear .3s;
     -o-transition: all .8s linear .3s;
@@ -747,5 +747,22 @@
     margin-top: 39px;
     border-top: 1px solid #e0e0e0;
     background: #f9f9f9;
+}
+.tailText{
+    line-height: 39px;
+    overflow: hidden;
+}
+.tailText:nth-of-type(1) a{
+    color: #999;
+}
+.tailText:nth-of-type(2) a{
+    color: #666;
+}
+.tailText a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 /*页面底部 结束 */
