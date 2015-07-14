@@ -332,7 +332,7 @@
 .thirdStepYou{
     background: url("../images/third-step-you.png");
     top: -220px;
-    opacity: .5;
+    opacity: 0.5;
     left: 192px;
     -webkit-transition: all .6s linear .3s;
     -moz-transition: all .6s linear .3s;
@@ -766,3 +766,49 @@ a:hover{
     text-decoration: underline;
 }
 /*页面底部 结束 */
+
+
+/*页面侧边浮动栏*/
+.fixToolBar{
+    position: fixed;
+    margin-left: 490px;
+    height: 90px;
+    width: 45px;
+    bottom: 50px;
+    z-index: 9999;
+    display: block;
+    text-indent: -9999em;
+    overflow: hidden;
+    left: 50%;
+}
+.toolBar{
+    display: block;
+    width: 45px;
+    height: 45px;
+    background: url("../images/mic-top.png");
+}
+.yijian{
+    background-position: 0 -92px;
+    transition: .2s linear;
+    -webkittransition: .2s linear;
+    -ms-transition: .2s linear;
+    -moz-transition: .2s linear;
+    -o-transition: .2s linear;
+}
+.yijian:hover{
+    background-position: 0 -138px;
+}
+#goTop{
+    opacity: 0;
+    transition: .3s linear;
+    -webkittransition: .3s linear;
+    -ms-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -o-transition: .3s linear;
+}
+.goTop{
+    background-position: 0 0;
+}
+.goTop:hover{
+    background-position: 0 -46px;
+}
