@@ -7,7 +7,12 @@
 $(function(){
     var scrollTop = $(window).scrollTop();
     setStatus(scrollTop);
+    /*给保持登录状态 添加事件 -- 开始 --*/
+    $(".staylogin").click(function(){
+        $("._chbx").toggleClass("_nologin");
+    })
 
+    /*给保持登录状态 添加事件 -- 结束 --*/
     /*给侧边栏小图标 返回顶部 绑定事件 --开始*/
     $("#goTop").bind("click", function(){
         $(window).scrollTop(0);

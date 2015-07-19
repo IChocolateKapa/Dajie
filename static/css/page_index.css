@@ -47,11 +47,19 @@
     background: #f57451;
     border: 1px solid #f57451;
 }
+.staylogin{
+    display: inline-block;
+}
 ._chbx{
     background: url("../images/checkbox.png") 0 -34px no-repeat;
 }
+._nologin{
+    background: url("../images/checkbox.png") 0 -51px;
+}
 
-
+._nologin:hover {
+    background: url("../images/checkbox.png") 0 -17px;
+}
 /*登录侧边 右侧 使用其他账户登录 开始*/
 ._otherAuth{
     border-top: 1px dotted #ccc;
