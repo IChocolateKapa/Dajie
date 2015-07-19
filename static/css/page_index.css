@@ -812,3 +812,53 @@ a:hover{
 .goTop:hover{
     background-position: 0 -46px;
 }
+
+.floatBar{
+    width: 300px;
+    height: 80px;
+    position: fixed;
+    bottom: 50px;
+    right: -400px;
+    z-index: 1000;
+    margin-left: 540px;
+    left: 50%;
+    background: rgba(38, 166, 179, 0.8);
+    box-shadow: 0 0 3px 3px rgba(83, 199, 228, 0.3);
+    transition: .3s ease-in;
+    -webkit-transition: .3s ease-in;
+    -ms-transition: .3s ease-in;
+    -moz-transition: .3s ease-in;
+    -o-transition: .3s ease-in;
+    transform-origin: left bottom;
+    -webkit-transform-origin: left bottom;
+    -moz-transform-origin: left bottom;
+    -ms-transform-origin: left bottom;
+    -o-transform-origin: left bottom;
+
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+}
+
+.closeX{
+    z-index: 1200;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    right: 5px;
+    top: 5px;
+}
+.closeX:hover{
+    text-decoration: none;
+    background: rgba(217, 99, 118, .9);
+}
+._showFloat{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+

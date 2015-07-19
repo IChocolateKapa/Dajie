@@ -47,6 +47,7 @@ th, td{
 .fcccc{color: #ccc;}
 .fc999{color: #999;}
 .fcc2a5b2{color: #c2a5b2;}
+.fcd96376{color: #d96376}
 .fb{font-weight: bold;}
 .fn{font-weight: normal;}
 .t2{text-indent: 2em;}
@@ -55,8 +56,10 @@ th, td{
 .lh100{line-height: 100%;}
 .lh150{line-height: 150%;}
 .lh200{line-height: 200%;}
+.lh_30{line-height: 30px;}
 .unl{text-decoration: underline;}
 .no_unl{text-decoration: none;}
+.tint10{text-indent: 10px;}
 
 
 /*定位*/
@@ -168,6 +171,7 @@ th, td{
 .bgdf3f5f8{background: #f3f5f8;}
 .bgdWhite{background: white;}
 .bgdf9f9f9{background: #f9f9f9}
+.bgdd96376{background: #d96376;}
 
 
 /*边距*/
