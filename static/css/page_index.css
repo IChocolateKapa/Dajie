@@ -339,14 +339,14 @@
 }
 .thirdStepYou{
     background: url("../images/third-step-you.png");
-    top: -220px;
-    opacity: 0.5;
+    top: -180px;
+    opacity: 0;
     left: 192px;
-    -webkit-transition: all .6s linear .3s;
-    -moz-transition: all .6s linear .3s;
-    -o-transition: all .6s linear .3s;
-    -ms-transition: all .6s linear .3s;
-    transition: all .6s linear .3s;
+    -webkit-transition: opacity .2s linear 0s, top .6s linear .2s;
+    -moz-transition: opacity .2s linear 0s, top .6s linear .2s;
+    -o-transition: opacity .2s linear 0s, top .6s linear .2s;
+    -ms-transition: opacity .2s linear 0s, top .6s linear .2s;
+    transition: opacity .2s linear 0s, top .6s linear .2s;
 }
 .thirdStep1{
     top: -45px;

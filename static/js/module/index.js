@@ -7,6 +7,11 @@
 $(function(){
     var scrollTop = $(window).scrollTop();
     setStatus(scrollTop);
+    if($(window).height() > 700 && scrollTop < 10){
+        setTimeout(function(){
+            $("#_firstHead").addClass("scale")
+        }, 300);
+    }
     /*给保持登录状态 添加事件 -- 开始 --*/
     $(".staylogin").click(function(){
         $("._chbx").toggleClass("_nologin");
@@ -15,7 +20,8 @@ $(function(){
     /*给保持登录状态 添加事件 -- 结束 --*/
     /*给侧边栏小图标 返回顶部 绑定事件 --开始*/
     $("#goTop").bind("click", function(){
-        $(window).scrollTop(0);
+        $("html, body").animate({scrollTop: 0}, 800);
+        //$(window).scrollTop(0);
     })
     /*给侧边栏小图标 返回顶部 绑定事件 --结束*/
 
@@ -33,6 +39,6 @@ $(function(){
 
 $(window).on("scroll", function(){
     var scrollTop = $(window).scrollTop();
-    console.log(scrollTop);
+    //console.log(scrollTop);
     setStatus(scrollTop);
 })
